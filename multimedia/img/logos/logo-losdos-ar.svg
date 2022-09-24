@@ -1,0 +1,20 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169 130" width="169" height="130">
+	<title>Nuevo proyecto</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 25px;fill: #000000;font-weight: 400;font-family: "BerenisADFPro-Regular", "Berenis ADF Pro" } 
+		.t1 { font-size: 150px;fill: #000000;font-weight: 400;font-family: "BerenisADFPro-Regular", "Berenis ADF Pro" } 
+	</style>
+	<text id="AR." style="transform: matrix(1,0,0,1,73,50)" >
+		<tspan x="59.9" y="18.3" class="t0">A</tspan><tspan  y="18.3" class="t0">R</tspan><tspan  y="18.3" class="t0">.
+</tspan>
+	</text>
+	<text id="2" style="transform: matrix(1,0,0,1,-208,18)" >
+		<tspan x="274.5" y="109.5" class="t1">2
+</tspan>
+	</text>
+	<text id="L" style="transform: matrix(1,0,0,1,-31,-1)" >
+		<tspan x="30.5" y="109.5" class="t1">L
+</tspan>
+	</text>
+</svg>
