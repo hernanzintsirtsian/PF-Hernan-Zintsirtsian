@@ -16,7 +16,7 @@ html{
     padding:5px;
 }
 .txtAnuncio{
-    color: hsl(0, 0%, 100%);
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
 }
 
@@ -42,7 +42,7 @@ html{
  transition: background-size .3s;
 }
 .botoneraNav ul li a:hover{
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: 600;
     background-size: 100% 2px;
 
@@ -50,30 +50,6 @@ html{
 /* termina nav */
 
 /* inicia accesos directos */
-h1{
-color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: 4rem;
-}
-
-h2{
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-}
-
-h3{
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-}
-
- h4{
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem
-}
-
 .txtCenter{
     text-align: center;
 }
@@ -85,7 +61,7 @@ h3{
 }
 
 .txtBlack{
-    text-decoration-color: black;
+    text-decoration-color: rgb(0, 0, 0);
 }
 
 /*fin accesos directos */
@@ -99,15 +75,15 @@ h3{
 
 /* contacto seccion */
 .contenedorContacto{
-width:30%;
-padding: 6%;
-margin-left: 30%;
+width:80%;
+padding: 4%;
+margin-left: 10%;
  }
 
 .formInput{
     width: 100%;
-    padding: 1rem;
-    border-radius: 10rem;
+    padding: 10px;
+    border-radius: 100px;
     margin-bottom: 16px;
     border:0.3rem solid rgb(255,235,235);
     font-size:1.2rem;
@@ -116,22 +92,23 @@ margin-left: 30%;
 
 .formTexarea{
     width: 100%;
-    padding: 1rem;
-    border-radius: 10rem;
-    margin-bottom: 1.6rem;
+    padding: 10px;
+    border-radius: 100px;
+    margin-bottom: 16px;
     border:3px solid rgb(255,235,235);
     font-size:1.2rem;
 
 }
 
 .inputBtn{
-    width: 30%;
-    padding: 1rem;
-    border-radius: 10rem;
+    width: 40%;
+    padding: 10px;
+    border-radius: 100px;
     margin-left: 32%;
     background-color: rgb(255,235,235);
-    color: white;
+    color: rgb(0, 0, 0);
     border:0.5rem solid rgb(255,235,235);
+    font-size: 1.2rem;
 }
 
 /*fin seccion de contacto */
@@ -139,33 +116,32 @@ margin-left: 30%;
 /* titulos de las paginas*/
 .tituloContacto{
 color:rgb(0, 0, 0);
-letter-spacing: 0.3rem;
+letter-spacing: 0.5rem;
 background-color: rgb(208, 178, 236);
-font-size: medium;
 }
 
 .tituloCatalogoMedias{
-        color: bisque;
+        color: rgb(255, 228, 196);
         background-color:rgb(113,113,105);
-        letter-spacing: 4rem;
+        letter-spacing: 0.5rem;
 }
 
 .tituloCatalogoKids{
         color: rgb(255,200,218);
         background-color:rgb(205,255,240);
-        letter-spacing: 4rem;
+        letter-spacing: 0.5rem;
 }
 
 .tituloCatalogoTemporada{
         color:rgb(252,254,253);
         background-color:rgb(167,184,213);
-        letter-spacing: 4rem;
+        letter-spacing: 0.5rem;
 }
 
 .tituloCatalogoBazar{
         color:rgb(219,239,92);
         background-color:rgb(161,166,148);
-        letter-spacing: 4rem;
+        letter-spacing: 0.5rem;
 }
 
 .tituloCatalogoAccesorios{
@@ -196,7 +172,7 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 border-radius: 10px;
 }
 .containerDestacados img:hover{
-    border: 5px solid white;
+    border: 5px solid rgb(255, 255, 255);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 /* suscripcion*/
@@ -223,32 +199,25 @@ color: rgb(211,211,211);
 transition-duration: 0.3s;
 }
 
-@media (max-width:768px){
-  .btnSus{
-    display: inline;
-    margin-left: 41%;
-    margin-top: 1%;
-    width: 20%;
-    border-radius: 100px;
-    background-color: rgb(255,235,235);
-    color: rgb(0, 0, 0);
-    border:0.5rem solid rgb(255,235,235);
-    font-weight: 800;
-    font-size:0.8rem;
-    }
-  
-    .btnSus:hover{
-    background-color: rgb(255,235,235);
-  color: rgb(211,211,211);
-  transition-duration: 0.3s;
-  }
-
-}
 /* fin suscripcion*/
 
 /* Fin destacados*/
 
 /* IniciaFooter*/
+
+.footerSeccion .item.text {
+  margin-bottom:36px;
+}
+
+.footerSeccion .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footerSeccion .item.social {
+  text-align:center;
+}
+
 .footerSeccion {
     padding:50px 0;
     color:rgb(0, 0, 0);
@@ -280,39 +249,6 @@ transition-duration: 0.3s;
     opacity:2;
 }
   
-  @media (max-width:767px) {
-    .footerSeccion .item:not(.social) {
-      text-align:center;
-      padding-bottom:20px;
-    }
-}
-  
-  .footerSeccion .item.text {
-    margin-bottom:36px;
-}
-  
-  @media (max-width:767px) {
-    .footerSeccion .item.text {
-      margin-bottom:0;
-    }
-}
-  
-  .footerSeccion .item.text p {
-    opacity:0.6;
-    margin-bottom:0;
-}
-  
-  .footerSeccion .item.social {
-    text-align:center;
-}
-  
-  @media (max-width:991px) {
-    .footerSeccion .item.social {
-      text-align:center;
-      margin-top:20px;
-    }
-}
-  
   .footerSeccion .item.social > a {
     font-size:2rem;
     width:36px;
@@ -323,7 +259,7 @@ transition-duration: 0.3s;
     border-radius:50%;
     box-shadow:0 0 0 1px rgba(255,255,255,0.4);
     margin:0 8px;
-    color:#fff;
+    color:rgb(255, 255, 255);
     opacity:0.75;
 }
   
@@ -343,25 +279,6 @@ transition-duration: 0.3s;
     font-size: small;
 }
   /* TerminaFooter*/
-
-/* media inicio */
-  @media(min-width:768px){
-
-    .tituloCatalogoInicio{
-        color:rgb(135,137,138);
-        background-color:rgb(255,235,235);
-        font-size: x-large;
-        letter-spacing: 4rem;
-    
-    }
-
-    .tituloCatalogoAccesorios{
-      color:rgb(255, 255, 255);
-      background-color:rgb(93,107,136);
-      letter-spacing: 4rem;
-  
-  }
-}
 
 /*ubicacion iframe*/
 .tamañoMapa{
@@ -387,11 +304,11 @@ transition-duration: 0.3s;
 
 .cardAction {
   position: relative;
-  float: right;
+  left: 85%;
   margin-top: -25px;
   margin-right: 20px;
   z-index: 2;
-  color: #E26D5C;
+  color: rgb(255,243,243);
   background: rgb(255, 255, 255);
   border-radius: 100%;
   padding: 15px;
@@ -400,8 +317,8 @@ transition-duration: 0.3s;
 }
 
 .cardAction:hover {
-  color: #fff;
-  background: #E26D5C;
+  color: rgb(255, 255, 255);
+  background: rgb(255,243,243);
   -webkit-animation: pulse 1.5s infinite;
 }
 
@@ -416,7 +333,7 @@ transition-duration: 0.3s;
   padding: 10px 15px;
   background: rgb(233,233,233);
   font-size: 14px;
-  color: #636262;
+  color: rgb(99, 98, 98);
 }
 
 .cardButton {
@@ -432,10 +349,9 @@ transition-duration: 0.3s;
 .cardButton:hover {
   text-decoration: none;
   background-color:rgb(208,178,236);
-  color: #fff;
+  color: rgb(255, 255, 255);
 
 }
-
 
 @-webkit-keyframes pulse {
   0% {
@@ -460,4 +376,122 @@ transition-duration: 0.3s;
       transform: scale(0.9);
       box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
   }
+}
+
+@media (max-width:991px) {
+  .footerSeccion .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+@media (max-width:767px){
+  .btnSus{
+    display: inline;
+    margin-left: 41%;
+    margin-top: 1%;
+    width: 20%;
+    border-radius: 100px;
+    background-color: rgb(255,235,235);
+    color: rgb(0, 0, 0);
+    border:0.5rem solid rgb(255,235,235);
+    font-weight: 800;
+    font-size:0.8rem;
+    }
+  
+    .btnSus:hover{
+    background-color: rgb(255,235,235);
+  color: rgb(211,211,211);
+  transition-duration: 0.3s;
+  }
+  .footerSeccion .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+  .footerSeccion .item.text {
+    margin-bottom:0;
+  }
+}
+
+@media(min-width:767px){
+
+  .tituloCatalogoInicio{
+      color:rgb(135,137,138);
+      background-color:rgb(255,235,235);
+      font-size: x-large;
+      letter-spacing: 4rem;
+  
+  }
+
+  .tituloCatalogoAccesorios{
+    color:rgb(255, 255, 255);
+    background-color:rgb(93,107,136);
+    letter-spacing: 4rem;
+
+}
+.tituloCatalogoBazar{
+  color:rgb(219,239,92);
+  background-color:rgb(161,166,148);
+  letter-spacing: 4rem;
+}
+.tituloCatalogoTemporada{
+color:rgb(252,254,253);
+background-color:rgb(167,184,213);
+letter-spacing: 4rem;
+}
+.tituloContacto{
+color:rgb(0, 0, 0);
+letter-spacing: 0.3rem;
+background-color: rgb(208, 178, 236);
+font-size: medium;
+}
+
+.tituloCatalogoMedias{
+        color: rgb(255, 228, 196);
+        background-color:rgb(113,113,105);
+        letter-spacing: 4rem;
+}
+
+.tituloCatalogoKids{
+        color: rgb(255,200,218);
+        background-color:rgb(205,255,240);
+        letter-spacing: 4rem;
+}
+/* contacto seccion */
+.contenedorContacto{
+width:50%;
+padding: 6%;
+margin-left: 26%;
+ }
+
+.formInput{
+    width: 100%;
+    padding: 10px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    border:0.3rem solid rgb(255,235,235);
+    font-size:1.5rem;
+    
+}
+
+.formTexarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 100px;
+    margin-bottom: 1.6rem;
+    border:3px solid rgb(255,235,235);
+    font-size:1.5rem;
+
+}
+
+.inputBtn{
+    width: 40%;
+    padding: 10px;
+    border-radius: 100px;
+    margin-left: 29%;
+    background-color: rgb(255,235,235);
+    color: rgb(0, 0, 0);
+    border:0.5rem solid rgb(255,235,235);
+    font-size: 1.5rem;
+}
 }
