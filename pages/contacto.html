@@ -10,71 +10,133 @@
       href="../multimedia/img/favicon/favicon-32x32.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
-  
-   <!-- inicia nav -->
-   <body>
-    <body>
-      <div class="bgAnuncio text-center">
-        <p class="txtAnuncio mt-2">Envio gratis a partir de $4.500,00</p>
-    </div>
-      <nav class="navbar navbar-expand-lg navbar-light bgNav botoneraNav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img class="imgNav" src="../multimedia/img/logos/logo-losdos-ar.svg" alt="logo losdos.ar">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mt-5 mb-lg-0 gap-5">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="../pages/accesorios.html">Accesorios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../pages/bazar.html">Bazar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../pages/winteredition.html">WinterEdition</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="../pages/kids.html">Kid's</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="../pages/medias.html">Medias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="../pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
+<body>
+  <!-- AnuncioSuperior --> 
+  <div class="anuncioSuperior text-center">
+    <p class="txtAnuncio mt-2">Envio gratis a partir de $4.500,00</p>
+  </div>
+  <!-- AnuncioSuperior -->
+    <!-- Navbar -->
+    <nav class="navbar sticky-top pt-0 navbar-expand-lg bgNav botoneraNav">
+      <div class="container-fluid">
+        <a class="navbar-brand mt-2 mt-lg-0" href="../index.html">
+          <img
+            class="imgNav"
+            src="../multimedia/img/logos/logo-losdos-ar.svg"
+            alt="Logo Los Dos" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mt-5 mb-lg-0 gap-5">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="../pages/accesorios.html"
+                >Accesorios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/bazar.html"
+                >Bazar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="../pages/winteredition.html"
+                >WinterEdition</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/kids.html"
+                >Kid's</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../pages/medias.html"
+                >Medias</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="../pages/contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+          <div>
+            <form class="d-flex">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-secondary ms-1" type="submit">Buscar</button>
+            </form>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img class="sesionAvatar ms-5"
+                  src="../multimedia/img/logos/sesion.webp"
+                  alt="Sesion"/>
+              </a>
+              <ul class="dropdown-menu bg-white" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Compras</a></li>
+                <li><a class="dropdown-item" href="#">Configuración</a></li>
+                <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
+              </ul>
+            </div>
             <div>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-secondary" type="submit">Buscar</button>
-              </form>
+              <a
+                class="nav-link"
+                href="compras"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img class="sesionAvatar ms-1"
+                  src="../multimedia/img/logos/carrito-de-compras.png"
+                  alt="carrito de compras"/>
+              </a>
             </div>
           </div>
         </div>
-      </nav>
-      <!-- ends nav -->
-
+    </nav>
+    <!-- Navbar -->
     <!-- inicia header -->
     <header>
       <div class="tituloContacto">
-        <h1 class="txtCenter fs-1">Contacto</h1>
-        <h2 class="txtCenter fs-4">
+        <h1 class="text-center fs-1">Contacto</h1>
+        <h2 class="text-center fs-4">
           Lunes a viernes de 9 a 19 hs. Sábados de 9 a 14 hs.
         </h2>
       </div>
     </header>
     <!-- termina header -->
-
     <!-- inicia main -->
     <main>
-      <!-- incia formlario de contacto -->
+    <!-- incia formlario de contacto -->
       <div class="contenedorContacto">
         <form action="envio.php">
           <input
@@ -83,107 +145,374 @@
             name="Nombre"
             placeholder="Nombre"
           />
-
           <input
             class="formInput"
             type="text"
             name="Email"
             placeholder="Email"
           />
-
           <input
             class="formInput"
             type="text"
-            name="Telefono"
-            placeholder="Telefono"
+            name="Teléfono"
+            placeholder="Teléfono"
           />
-
           <textarea
             class="formTexarea"
             name="MENSAJE"
             placeholder="MENSAJE"
           ></textarea>
-
           <input class="inputBtn" type="submit" value="Enviar" />
         </form>
       </div>
-      <!-- termina formulario de contacto -->
-
+    <!-- termina formulario de contacto -->
     </div>
     <section>
-      <iframe class="tamañoMapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.2541368329416!2d-58.51017358467897!3d-34.69876947004086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcced60f1e1f29%3A0x234b05c93b0b7d67!2sPlaza%20Tapiales!5e0!3m2!1ses!2sar!4v1663955779363!5m2!1ses!2sar" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.2541368329416!2d-58.51017358467897!3d-34.69876947004086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcced60f1e1f29%3A0x234b05c93b0b7d67!2sPlaza%20Tapiales!5e0!3m2!1ses!2sar!4v1663955779363!5m2!1ses!2sar" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    <div class="bgSup">
+    <div class="suscripcion">
       <div class="col-sm-12 col-lg12">
-        <h2 class="txtCenter fs-1">Suscribite para todos nuestros beneficios</h2>
-        <h3 class="text-center fs-2">Completá tus datos y obtené un 15% off en tu primera compra.</h3>
+        <h2 class="text-center fs-1">
+          Suscribite para todos nuestros beneficios
+        </h2>
+        <h3 class="text-center fs-2">
+          Completá tus datos y obtené un 15% off en tu primera compra.
+        </h3>
       </div>
       <div>
-        <button  class="btnSus">SUSCRIBITE</button>
-      </div>  
+        <button class="btnSus">SUSCRIBITE</button>
+      </div>
     </div>
+      <h2 class="bgFaqs text-center p-4 fs-1">
+        ¡Preguntas frecuentes!
+      </h2>
+    </div>
+    <div class="d-flex align align-items-center m-3 ">
+      <img height="40" width="40" src="../multimedia/img/logos/sobrelacompra.webp" alt="Sobre la compra">
+      <h2 class="fs-1 mt-4">Sobre la compra</h2>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item border-top border-bottom border-start-0 ">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed text-dark bg-transparent fs-3 shadow-lg p-3 mb-5 bg-body rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            ¿Cómo compro?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+          <div class="accordion-body">
+            <p class="fs-5">1. Navegá por el sitio hasta encontrar el producto que más te guste. Podés encontrarlos por categoría o en el buscador ingresando el nombre del producto de tu interés. (Ej: cartuchera).
+<br>
+              2. Una vez que encontraste tu producto favorito, debés hacer click en “COMPRAR” para que se agregue a tu carrito. (En caso de querer más de una unidad debes seleccionar la cantidad deseada y luego hacer click en COMPRAR).
+<br>
+              3. Para ver el detalle de tu carrito debés hacer click en el icono “Mi Compra”
+<br>             
+              4. Si te equivocaste en la cantidad seleccionada podés sumar o restar unidades y actualizar tu carrito de allí mismo o si querés quitar alguno de los productos podés hacerlo desde la opción “Quitar Artículos”
+<br>              
+              5. Clickeá en el botón "Comenzar pago", en el proceso de pago deberás completar tus datos y seleccionar el método de envío.
+<br>              
+              6. Hacé click en “Iniciar pago” para finalizar el proceso de tu compra.
+<br>           
+              Una vez que completes todos estos pasos, recibirás toda la información a tu casilla de email con la cual te registraste en nuestra web, para saber el estado de tu pedido y puedas darle seguimiento.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-top border-bottom border-start-0 ">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            ¿Recibo el mismo producto que veo en la foto?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
+          <div class="accordion-body">
+            <p class="fs-5">Sí. En LosDos hacemos todos los esfuerzos posibles para mostrar las características de los artículos (color, texturas) tal como son en la realidad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align align-items-center m-3 ">
+        <img height="40" width="40" src="../multimedia/img/logos/registrousuario.webp" alt="registrodeusuario">
+        <h2 class="fs-1 mt-4">Registro de usuario</h2>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item border-top border-bottom border-start-0 ">
+          <h2 class="accordion-header" id="registrodeusuario1">
+            <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseregistrodeusuario1" aria-expanded="true" aria-controls="collapseregistrodeusuario1">
+              ¿Debo estar registrado para poder comprar?
+            </button>
+          </h2>
+          <div id="collapseregistrodeusuario1" class="accordion-collapse collapse" aria-labelledby="registrodeusuario1">
+            <div class="accordion-body">
+              <p class="fs-5">No. Contás con la opción de compra como invitado. En esta modalidad de compra, te solicitaremos únicamente los datos imprescindibles para poder tramitar tu pedido. Una vez finalizado el proceso de compra, te ofreceremos la posibilidad de registrarse como usuario o continuar como usuario no registrado. Te recomendamos registrarte para que tengas la mejor experiencia de compra y puedas recibir beneficios exclusivos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-top border-bottom border-start-0 ">
+          <h2 class="accordion-header" id="registrodeusuario2">
+            <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseregistrodeusuario2" aria-expanded="false" aria-controls="collapseregistrodeusuario2">
+              ¿Cómo me registro en el sitio de LosDos?
+            </button>
+          </h2>
+          <div id="collapseregistrodeusuario2" class="accordion-collapse collapse" aria-labelledby="registrodeusuario1" >
+            <div class="accordion-body">
+              <p class="fs-5">Clickeá en "Mi cuenta" en la parte superior derecha del sitio y luego en “registrarme”. Serás dirigido automáticamente a la página para ingresar a tu cuenta. En "Nuevos Clientes" completá el formulario y creá tu cuenta.  LosDos posee una política de privacidad por la cual ningún dato personal será divulgado a terceros en ninguna circunstancia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex align align-items-center m-3 ">
+          <img height="40" width="40" src="../multimedia/img/logos/mediosdecompra.webp" alt="medios de compra">
+          <h2 class="fs-1 mt-4">Medios de compra</h2>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item border-top border-bottom border-start-0 ">
+            <h2 class="accordion-header" id="mediosdecompra1">
+              <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsemediosdecompra1" aria-expanded="true" aria-controls="collapsemediosdecompra1">
+                ¿Qué formas de pago puedo utilizar para realizar mi compra?
+              </button>
+            </h2>
+            <div id="collapsemediosdecompra1" class="accordion-collapse collapse" aria-labelledby="mediosdecompra1">
+              <div class="accordion-body">
+                <p class="fs-5">Se puede pagar en cuotas con todas las tarjetas de crédito de cualquier banco y con tarjeta de débito. Los pagos serán procesados a través de Mercado Pago. También se puede pagar en efectivo en RapiPago, Pago Fácil y Provincia NET Pagos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-top border-bottom border-start-0 ">
+            <h2 class="accordion-header" id="mediosdecompra2">
+              <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsemediosdecompra2" aria-expanded="false" aria-controls="collapsemediosdecompra2">
+                ¿Qué promociones y cuotas hay disponibles?
+              </button>
+            </h2>
+            <div id="collapsemediosdecompra2" class="accordion-collapse collapse" aria-labelledby="mediosdecompra2" >
+              <div class="accordion-body">
+                <p class="fs-5">Podés pagar hasta en 3 y 6 cuotas sin interés con Visa y Master. El precio publicado corresponde a precio contado efectivo, tarjeta de débito o tarjeta de crédito en 1 pago.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-top border-bottom border-start-0 ">
+            <h2 class="accordion-header" id="mediosdecompra3">
+              <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsemediosdecompra3" aria-expanded="false" aria-controls="collapsemediosdecompra3">
+                ¿Es seguro pagar en este sitio?
+              </button>
+            </h2>
+            <div id="collapsemediosdecompra3" class="accordion-collapse collapse" aria-labelledby="mediosdecompra3">
+              <div class="accordion-body">
+                <p class="fs-5">Toda la información ingresada queda automáticamente protegida por el sistema SSL (Secure Sockets Layer) que garantiza una transacción 100% segura. Este sistema encripta los datos suministrados y evita su uso desautorizado.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-top border-bottom border-start-0 ">
+            <h2 class="accordion-header" id="mediosdecompra4">
+              <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsemediosdecompra4" aria-expanded="false" aria-controls="collapsemediosdecompra4">
+                ¿Puedo pedir factura A?
+              </button>
+            </h2>
+            <div id="collapsemediosdecompra4" class="accordion-collapse collapse" aria-labelledby="mediosdecompra4">
+              <div class="accordion-body">
+                <p  class="fs-5">Por el momento sólo entregamos facturas tipo “B”, para consumidor final.</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align align-items-center m-3 ">
+            <img height="40" width="40" src="../multimedia/img/logos/envios.webp" alt="envios y retiros de la tienda">
+            <h2 class="fs-1 mt-4">Envíos y retiro en tienda</h2>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item border-top border-bottom border-start-0 ">
+              <h2 class="accordion-header" id="enviosyretirosdelatienda1">
+                <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseenviosyretirosdelatienda1" aria-expanded="true" aria-controls="collapsemeenviosyretirosdelatienda1">
+                  ¿Cómo realizan los envíos?
+                </button>
+              </h2>
+              <div id="collapseenviosyretirosdelatienda1" class="accordion-collapse collapse" aria-labelledby="enviosyretirosdelatienda1">
+                <div class="accordion-body">
+                  <p class="fs-5">Hacemos envíos a todo el país por medio de ANDREANI y PEDIDOS YA. Te enviamos tu pedido a la puerta de tu casa o podés retirarlo por tu tienda de LosDos favorita.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-top border-bottom border-start-0 ">
+              <h2 class="accordion-header" id="enviosyretirosdelatienda2">
+                <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseenviosyretirosdelatienda2" aria-expanded="false" aria-controls="collapseenviosyretirosdelatienda2">
+                  ¿Cómo puedo seguir mi pedido?
+                </button>
+              </h2>
+              <div id="collapseenviosyretirosdelatienda2" class="accordion-collapse collapse" aria-labelledby="enviosyretirosdelatienda2" >
+                <div class="accordion-body">
+                  <p class="fs-5">Una vez que confirmada la compra, recibirás un mail con el cual te registraste en nuestra web, con tu número de pedido y el estado de este. Una vez que el mismo sea despachado desde nuestro Centro de Distribución recibirás un aviso con el número de seguimiento para que puedas consultar el estado desde la página de ANDREANI: https://seguimiento.andreani.com/ o PEDIDOS YA
+                    Si seleccionaste, retiro en tienda; una vez que el pedido se encuentre disponible estarás recibiendo un mail de aviso para que lo retires con el N° de orden y DNI. En caso que quieras autorizar a un tercero para que retire tu pedido deberá presentar el mail de confirmación y número de pedido.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-top border-bottom border-start-0 ">
+              <h2 class="accordion-header" id="enviosyretirosdelatienda3">
+                <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseenviosyretirosdelatienda3" aria-expanded="false" aria-controls="collapseenviosyretirosdelatienda3">
+                  ¿Cómo puedo seguir mi pedido?
+                </button>
+              </h2>
+              <div id="collapseenviosyretirosdelatienda3" class="accordion-collapse collapse" aria-labelledby="enviosyretirosdelatienda3">
+                <div class="accordion-body">
+                  <p class="fs-5">Desde el momento en que efectúas tu compra, te enviaremos emails informándote el estado de tu pedido. Si seleccionaste envío a domicilio, recibirás un link de Andreani o Pedidos Ya para poder consultar el estado de tu pedido. Si seleccionaste envío a tienda, recibirás un email con una notificación cuando tu pedido esté listo para retirar en la tienda que seleccionaste.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-top border-bottom border-start-0 ">
+              <h2 class="accordion-header" id="enviosyretirosdelatienda4">
+                <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseenviosyretirosdelatienda4" aria-expanded="false" aria-controls="collapseenviosyretirosdelatienda4">
+                  ¿Cuánto tiempo tengo para retitar mi pedido en tienda?
+                </button>
+              </h2>
+              <div id="collapseenviosyretirosdelatienda4" class="accordion-collapse collapse" aria-labelledby="enviosyretirosdelatienda4">
+                <div class="accordion-body">
+                  <p class="fs-5">Tenés un plazo máximo de 15 días para ir a recoger tu compra.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-top border-bottom border-start-0 ">
+              <h2 class="accordion-header" id="enviosyretirosdelatienda5">
+                <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseenviosyretirosdelatienda5" aria-expanded="false" aria-controls="collapseenviosyretirosdelatienda5">
+                  ¿Cómo retiro mi pedido en tienda?
+                </button>
+              </h2>
+              <div id="collapseenviosyretirosdelatienda5" class="accordion-collapse collapse" aria-labelledby="enviosyretirosdelatienda5">
+                <div class="accordion-body">
+                  <p class="fs-5">Simplemente presentá tu DNI y el número de pedido.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-top border-bottom border-start-0 ">
+              <h2 class="accordion-header" id="enviosyretirosdelatienda6">
+                <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseenviosyretirosdelatienda6" aria-expanded="false" aria-controls="collapseenviosyretirosdelatienda6">
+                  ¿Puedo mandar a otra persona a retirar mi pedido?
+                </button>
+              </h2>
+              <div id="collapseenviosyretirosdelatienda6" class="accordion-collapse collapse" aria-labelledby="enviosyretirosdelatienda6">
+                <div class="accordion-body">
+                  <p class="fs-5">Si querés que un tercero recoja tu pedido, deberá presentar el mail de confirmación de compra y el número de pedido. Para cualquier consulta, podés contactarte con nuestro servicio de Atención al Cliente vía WhatsApp al +54 9 11 2324-5136 o escribinos un mail losdos@gmail.com de Lunes a Viernes de 9 a 19 Hs o Sábados de 9 a 14 Hs.</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align align-items-center m-3 ">
+              <img height="40" width="40" src="../multimedia/img/logos/cyd.webp" alt="cambios y devoluciones">
+              <h2 class="fs-1 mt-4">Cambios y devoluciones</h2>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item border-top border-bottom border-start-0 ">
+                <h2 class="accordion-header" id="cambiosydevoluciones1">
+                  <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecambiosydevoluciones1" aria-expanded="true" aria-controls="collapsemecambiosydevoluciones1">
+                    ¿Cómo puedo cambiar mi pedido?
+                  </button>
+                </h2>
+                <div id="collapsecambiosydevoluciones1" class="accordion-collapse collapse" aria-labelledby="cambiosydevoluciones1">
+                  <div class="accordion-body">
+                    <p class="fs-5">Te esperamos en cualquier tienda del país, tenés tiempo ilimitado, solamente te pediremos el número de tu pedido online, la factura de compra o tarjeta de regalo, y que el producto se encuentre con sus etiquetas originales. Tendrás la opción de cambiarlo por cualquier producto de la tienda o directamente pedir el reembolso del dinero pagado en efectivo. Verás reflejada la devolución de tu dinero en tu cuenta de MercadoPago. De no contar con una cuenta, MP creará una vinculada a tu correo electrónico de forma automática para que puedas recibir tu dinero allí. En caso que quieras cambiar un regalo que recibiste, y no tenes ticket de cambio, no te preocupes! Con el nombre o mail de la persona que realizó la compra podes realizar el cambio.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-top border-bottom border-start-0 ">
+                <h2 class="accordion-header" id="cambiosydevoluciones2">
+                  <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecambiosydevoluciones2" aria-expanded="false" aria-controls="collapsecambiosydevoluciones2">
+                    ¿Puedo pedir reembolso de dinero si no estoy contento con mi compra?
+                  </button>
+                </h2>
+                <div id="collapsecambiosydevoluciones2" class="accordion-collapse collapse" aria-labelledby="cambiosydevoluciones2" >
+                  <div class="accordion-body">
+                    <p class="fs-5">Sí. Disponés de 15 días desde que recibís tu pedido para solicitar el reembolso del dinero si no estás conforme con tu compra, en caso de defecto y/o falla en el/los producto/s adquirido/s.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-top border-bottom border-start-0 ">
+                <h2 class="accordion-header" id="cambiosydevoluciones3">
+                  <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecambiosydevoluciones3" aria-expanded="false" aria-controls="collapsecambiosydevoluciones3">
+                    ¿Tu producto llegó dañado?
+                  </button>
+                </h2>
+                <div id="collapsecambiosydevoluciones3" class="accordion-collapse collapse" aria-labelledby="cambiosydevoluciones3">
+                  <div class="accordion-body">
+                    <p class="fs-5">Podés devolverlo de forma fácil y rápida contactándote a: losdos@gmail.com o a través de un mensaje de Whatsapp al +54 9 11 2324-5136, te pediremos un video o foto indicando el problema para reembolsarte el dinero pagado.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-top border-bottom border-start-0 ">
+                <h2 class="accordion-header" id="cambiosydevoluciones4">
+                  <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecambiosydevoluciones4" aria-expanded="false" aria-controls="collapsecambiosydevoluciones4">
+                    ¿No tenés una tienda LosDos en tu ciudad?
+                  </button>
+                </h2>
+                <div id="collapsecambiosydevoluciones4" class="accordion-collapse collapse" aria-labelledby="cambiosydevoluciones4">
+                  <div class="accordion-body">
+                    <p class="fs-5">No te preocupes, contactate a losdos@gmail.com o envianos un mensaje de Whatsapp al +54 9 11 2324-5136 y solucionaremos tu caso.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-top border-bottom border-start-0 ">
+                <h2 class="accordion-header" id="cambiosydevoluciones5">
+                  <button class="accordion-button collapsed text-dark bg-transparent shadow-lg p-3 mb-5 bg-body rounded fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecambiosydevoluciones5" aria-expanded="false" aria-controls="collapsecambiosydevoluciones5">
+                    Los productos sólo serán aceptads si son devueltos en las siguientes condiciones.
+                  </button>
+                </h2>
+                <div id="collapsecambiosydevoluciones5" class="accordion-collapse collapse" aria-labelledby="cambiosydevoluciones5">
+                  <div class="accordion-body">
+                    <p class="fs-5">•Aros, tapabocas, perfumes y cosméticos, solo con su empaque original cerrado. El producto deberá estar SIN USO y con sus ETIQUETAS y ENVOLTORIOS ORIGINALES. No lavados ni usados, sin olores ni manchas, sin marcas o alteraciones hechas por el cliente. En el caso de que LosDos entienda que el producto devuelto no se encuadra en los criterios arriba descriptos, el sitio tiene derecho a no aceptar la devolución o realizar el cambio. Se reconocerá el producto al valor abonado al momento de la compra. Para el caso de compras de dos o más productos en conjunto a un precio especial, se considerará el valor proporcional de cada uno según su precio y se redondeará a favor del cliente.</p>
+                  </div>
+                </div>
+              </div>
   </main>  
   <!-- ends main -->
-
- <!-- inicia footer -->
- <div class="footerSeccion">
-  <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-6 col-md-3 item">
-                  <h3 class="text-wrap">¡Contactate para ayuda o ventas mayoristas!</h3>
-                  <ul>
-                    <a href="https://wa.me/c/5491123245136" target="_blank">
-                      <img height="40" width="40" src="../multimedia/img/logos/whatsapp-logo.png" alt="whatsapp" />
-                    </a>
-                      <li><a href="#">losdos@gmail.com</a></li>
-                      <li><a href="../pages/contacto.html">contacto</a></li>
-                  </ul>
-              </div>
-              <div class="col-sm-6 col-md-3 item">
-                  <h3>Productos</h3>
-                  <ul>
-                      <li><a href="../pages/accesorios.html">Accesorios</a></li>
-                      <li><a href="../pages/bazar.html">Bazar</a></li>
-                      <li><a href="../pages/winteredition.html">Productos de temporada</a></li>
-                      <li><a href="../pages/kids.html">Niños</a></li>
-                      <li><a href="../pages/medias.html">Medias</a></li>
-
-                  </ul>
-              </div>
-              <div class="col-md-6 item text">
-                  <h3>Compra 100% segura</h3>
-                  <p>Nuestro sitio tiene toda la seguridad para tu compra</p>
-                  <a href="https://letsencrypt.org/documents/isrg-cps-v3.3/" target="_blank">
-                  <img height="80" width="80" src="../multimedia/img/logos/logo-lets-encrypt-brand-line-point-line.png" alt="facebook">
+    <!-- inicia footer -->
+    <div class="footerSeccion">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3 item">
+                      <h2 class="text-wrap footerTitulo">¡Contactate para ayuda o ventas mayoristas!</h2>
+                      <ul>
+                        <a href="https://wa.me/c/5491123245136" target="_blank">
+                          <img height="40" width="40" src="../multimedia/img/logos/whatsapp-logo.png" alt="whatsapp" />
+                        </a>
+                          <li><a href="#">losdos@gmail.com</a></li>
+                          <li><a href="./pages/contacto.html">Contacto y preguntas frecuentes</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-3 item">
+                      <h2 class=" footerTitulo">Productos</h2>
+                      <ul>
+                          <li><a href="./pages/accesorios.html">Accesorios</a></li>
+                          <li><a href="./pages/bazar.html">Bazar</a></li>
+                          <li><a href="./pages/winteredition.html">Productos de temporada</a></li>
+                          <li><a href="./pages/kids.html">Niños</a></li>
+                          <li><a href="./pages/medias.html">Medias</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 item text">
+                      <h2 class="footerTitulo">Compra 100% segura</h2>
+                      <ul>
+                        <li><a href="https://letsencrypt.org/documents/isrg-cps-v3.3/">Nuestro sitio tiene toda la seguridad para tu compra</a></li>
+                      </ul>
+                      <a href="https://letsencrypt.org/documents/isrg-cps-v3.3/" target="_blank">
+                      <img height="80" width="80" src="../multimedia/img/logos/logo-lets-encrypt-brand-line-point-line.png" alt="facebook"></a>
+                  </div>
+                  <div class="col- item social d-flex justify-content-center">
+                  <a class="LogosFooter" href="https://www.facebook.com/losdos.tapiales.7" target="_blank">
+                    <img height="40" width="40" src="../multimedia/img/logos/facebook-logo.png" alt="facebook" />
                   </a>
+                  <a class="LogosFooter" href="https://vm.tiktok.com/ZMNcxnX3R/" target="_blank">
+                    <img height="40" width="40" src="../multimedia/img/logos/tiktok-logo.png" alt="tiktok" />
+                  </a>
+                  <a class="LogosFooter"
+                  href="https://instagram.com/losdos.ar?igshid=YmMyMTA2M2Y="
+                  target="_blank">
+                  <img height="40" width="40" src="../multimedia/img/logos/instagram-logo.png" alt="instagram" />
+                </a>
               </div>
-
-              <div class="col- item social">
-              <a href="https://www.facebook.com/losdos.tapiales.7" target="_blank">
-                <img height="40" width="40" src="../multimedia/img/logos/facebook-logo.png" alt="facebook" />
-              </a>
-              <a href="https://vm.tiktok.com/ZMNcxnX3R/" target="_blank">
-                <img height="40" width="40" src="../multimedia/img/logos/tiktok-logo.png" alt="tiktok" />
-              </a>
-              <a
-              href="https://instagram.com/losdos.ar?igshid=YmMyMTA2M2Y="
-              target="_blank">
-              <img height="40" width="40" src="../multimedia/img/logos/instagram-logo.png" alt="instagram" />
-            </a>
-
+              <div class="footerArg">
+                <p>Navegando:</p>
+                <img height="20" width="30" src="../multimedia/img/logos/logo-argentina.png" alt="Bandera Argentina"> 
+            </div>
+              </div>
+              <p class="copyright">LOS DOS © 2020</p>
           </div>
-          <div class="d-grid ">
-            <p>navegando:</p>
-            <img height="20" width="30" src="../multimedia/img/logos/logo-argentina.png" alt="Bandera Argentina"> 
-        </div>
-          </div>
-          <p class="copyright">LOS DOS © 2020</p>
-      </div>
-  </footer>
-</div>
+      </footer>
+  </div>
 <!-- ends footer -->
-<!-- Option 1: Bootstrap Bundle with Popper -->
+<!-- JS Bootstrap-->
+<script src= "js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

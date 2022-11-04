@@ -1,0 +1,61 @@
+/* catalogo */
+
+.containerCatalogo .col-lg-4{
+    padding: 20px;
+  }
+  .card-sl {  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .cardImage img {
+    height: 350px;
+    width:$w-100;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .cardAction {
+    position:relative;
+    left: 85%;
+    z-index: 2;
+    color: map-get($colors , background1 );
+    background-color: map-get($colors , colorTxtAnuncio );
+    border-radius: $w-100;
+    padding: 15px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+  .cardAction:hover {
+    color: map-get($colors , colorTxtAnuncio );
+    background: map-get($colors , background1 );
+    -webkit-animation: pulse 1.5s infinite;
+  }
+  .cardHeading {
+    font-size: $textXxl;
+    font-weight: bold;
+    background:map-get($colors , colorTxtAnuncio );
+    padding: 10px 15px;
+  }
+  .cardText {
+    padding: 10px 15px;
+    background: map-get($colors , colorTxtAnuncio );
+    font-size:$textXl;
+    color: map-get($colors , colorBotonera );
+  }
+  .cardButton {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: $w-100;
+    background-color:map-get($colors , background1 );
+    color: map-get($colors , background2 );
+    border-radius: 0 0 8px 8px;
+    font-size:$textMd;
+  }
+  .cardButton:hover {
+    text-decoration: none;
+    background-color:map-get($colors , bgTituloContacto );
+    color: map-get($colors , letrasBlancas );
+}
+.cardImgBoton{
+    height:$w-100 ;
+    width: 16px;
+}

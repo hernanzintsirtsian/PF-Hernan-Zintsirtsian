@@ -1,0 +1,130 @@
+//anuncio superior
+.anuncioSuperior{
+    background-color:map-get($colors , backgroundAnuncio );
+    padding: 5px;
+    .txtAnuncio{
+        color:map-get($colors, colorTxtAnuncio );
+        font-size: $textMd;
+
+    }
+}
+//destacados
+.containerDestacados{
+    col-lg-4{
+        padding: 25px;
+    }
+    img{
+        width: $w-100;
+        height: 350px;
+        margin: 1%;
+        margin-bottom: 1%; 
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-radius: 10px;
+        &:hover{
+            border: 5px solid map-get($colors, FondoBlanco );
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+        }
+    }
+}
+//titulos
+.tituloCatalogoInicio{
+    @include tituloTexto(1.6rem,1rem);
+    color:rgb(135,137,138);
+    background-color:rgb(255,235,235);
+    @media(min-width:767px){
+        @include tituloTextoMedia(1.6rem,1rem);  
+    }
+}
+.tituloCatalogoAccesorios{
+    @include tituloTexto(1.6rem,1rem);
+    color:map-get($colors, coloTxTituloAccesorios);
+    background-color:map-get($colors, bgTituloAccesorios );
+    @media(min-width:767px){
+        @include tituloTextoMedia(1.6rem,1rem);
+    }
+}
+.tituloCatalogoBazar{
+    @include tituloTexto(1.6rem,1rem);
+    color:map-get($colors, coloTxtTituloBazar);
+    background-color:map-get($colors, bgTituloBazar);
+    @media(min-width:767px){
+        @include tituloTextoMedia(1.6rem,1rem);
+    }
+}
+.tituloCatalogoTemporada{
+    @include tituloTexto(1.6rem,1rem);
+    color:map-get($colors, coloTxtTituloTemporada);
+    background-color:map-get($colors, bgTituloTemporada );
+    @media(min-width:767px){
+        @include tituloTextoMedia(1.6rem,1rem);
+    }
+}
+.tituloCatalogoKids{
+    @include tituloTexto(1.6rem,1rem);
+    color: map-get($colors, coloTxtTituloKids);
+    background-color:map-get($colors, bgTituloKids);
+    @media(min-width:767px){
+        @include tituloTextoMedia(1.6rem,1rem);
+    }
+}
+.tituloCatalogoMedias{
+    @include tituloTexto(1.6rem,1rem);
+    color: map-get($colors , coloTxtTituloMedias);
+    background-color:map-get($colors, bgTituloMedias );
+    @media(min-width:767px){
+        @include tituloTextoMedia(1.6rem,1rem);
+    }
+}
+.tituloContacto{
+    color: map-get($colors , coloTxtTituloContacto);
+    background-color:map-get($colors, bgTituloContacto );
+    letter-spacing: 0rem;
+    font-size: $textXxl;
+    @media(min-width:767px){
+            font-size: 2rem;
+            letter-spacing:0.5rem ;
+    }
+}
+.bgFaqs{
+    background-color: map-get($colors , bgTituloContacto);
+  }
+//seccion contacto
+.contenedorContacto{
+    width:80%;
+    padding: 4%;
+    margin-left: 10%;
+    .formInput{
+        width: $w-100;
+        padding: 10px;
+        border-radius: 100px;
+        margin-bottom: 16px;
+        border:0.3rem solid map-get($colors, background1 );
+        font-size:$textXl;
+    }
+    .formTexarea{
+        width: 100%;
+        padding: 10px;
+        border-radius: 100px;
+        margin-bottom: 16px;
+        border:2px solid map-get($colors, background1 );
+        font-size:$textXl;
+    }
+    .inputBtn{
+        width: 40%;
+        padding: 10px;
+        border-radius: 100px;
+        margin-left: 32%;
+        background-color: map-get($colors, background1 );
+        color:map-get($colors, colorBotonera );
+        border:0.5rem solid map-get($colors, background1 );
+        font-size:$textXl;
+    }
+    @media(min-width:767px){
+    width:$w-50;
+    padding: 6%;
+    margin-left: 26%;
+    }
+}
+
+
+

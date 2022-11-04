@@ -1,0 +1,74 @@
+
+/* IniciaFooter*/
+
+.footerSeccion {
+    padding:50px;
+    color:map-get($colors , letrasNegras );
+    background-color:map-get($colors , background1 );
+    .footerTitulo {
+      margin-left: 12px;
+      margin-bottom:12px;
+      font-weight:$textBold;
+      font-size:$textXxl;
+  }
+  ul{
+    li{
+      list-style:none;
+      line-height:1.6;
+      font-size:$textSuperXxl;
+    }
+    a{
+      color:inherit;
+      text-decoration:none;
+      opacity:0.6;
+      &:hover {
+        opacity:2;
+    }
+    }
+  }
+  .item{
+    .text{ 
+      margin-bottom:36px;
+      p{
+        opacity:0.6;
+      }
+    }
+  }
+.LogosFooter {
+    font-size:$textSuperXxl;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:$w-50;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:map-get($colors , letrasBlancas );
+    opacity:0.75;
+    &:hover {
+    opacity:0.9;
+}
+}
+.copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:$textXl;
+}
+.footerArg{
+    font-weight:$textLight;
+    font-size:$textMd;
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.item:not(.social){
+  @media(max-width:767px){     
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+}
+  /* TerminaFooter*/

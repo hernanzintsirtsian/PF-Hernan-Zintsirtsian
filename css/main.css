@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+* {
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
+  padding: 0%;
+  font-size: 62.5%;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  70% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }
+}
+.botoneraNav {
+  background-color: rgb(255, 235, 235);
+}
+.botoneraNav img {
+  width: 50%;
+}
+.botoneraNav ul li a {
+  font-size: 1.4rem;
+  color: rgb(54, 54, 54);
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(currentcolor, currentcolor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.botoneraNav ul li a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  background-size: 100% 2px;
+}
+.botoneraNav .sesionAvatar {
+  height: 25px;
+  width: 25px;
+}
+
+.anuncioSuperior {
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+}
+.anuncioSuperior .txtAnuncio {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+
+.containerDestacados col-lg-4 {
+  padding: 25px;
+}
+.containerDestacados img {
+  width: 100%;
+  height: 350px;
+  margin: 1%;
+  margin-bottom: 1%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.containerDestacados img:hover {
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tituloCatalogoInicio {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1rem;
+  color: rgb(135, 137, 138);
+  background-color: rgb(255, 235, 235);
+}
+@media (min-width: 767px) {
+  .tituloCatalogoInicio {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3rem;
+  }
+}
+
+.tituloCatalogoAccesorios {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(93, 107, 136);
+}
+@media (min-width: 767px) {
+  .tituloCatalogoAccesorios {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3rem;
+  }
+}
+
+.tituloCatalogoBazar {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1rem;
+  color: rgb(219, 239, 92);
+  background-color: rgb(161, 166, 148);
+}
+@media (min-width: 767px) {
+  .tituloCatalogoBazar {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3rem;
+  }
+}
+
+.tituloCatalogoTemporada {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1rem;
+  color: rgb(252, 254, 253);
+  background-color: rgb(167, 184, 213);
+}
+@media (min-width: 767px) {
+  .tituloCatalogoTemporada {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3rem;
+  }
+}
+
+.tituloCatalogoKids {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1rem;
+  color: rgb(255, 200, 218);
+  background-color: rgb(205, 255, 240);
+}
+@media (min-width: 767px) {
+  .tituloCatalogoKids {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3rem;
+  }
+}
+
+.tituloCatalogoMedias {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1rem;
+  color: rgb(255, 228, 196);
+  background-color: rgb(113, 113, 105);
+}
+@media (min-width: 767px) {
+  .tituloCatalogoMedias {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3rem;
+  }
+}
+
+.tituloContacto {
+  color: rgb(0, 0, 0);
+  background-color: rgb(208, 178, 236);
+  letter-spacing: 0rem;
+  font-size: 1.6rem;
+}
+@media (min-width: 767px) {
+  .tituloContacto {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+  }
+}
+
+.bgFaqs {
+  background-color: rgb(208, 178, 236);
+}
+
+.contenedorContacto {
+  width: 80%;
+  padding: 4%;
+  margin-left: 10%;
+}
+.contenedorContacto .formInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+  border: 0.3rem solid rgb(255, 235, 235);
+  font-size: 1.4rem;
+}
+.contenedorContacto .formTexarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+  border: 2px solid rgb(255, 235, 235);
+  font-size: 1.4rem;
+}
+.contenedorContacto .inputBtn {
+  width: 40%;
+  padding: 10px;
+  border-radius: 100px;
+  margin-left: 32%;
+  background-color: rgb(255, 235, 235);
+  color: rgb(54, 54, 54);
+  border: 0.5rem solid rgb(255, 235, 235);
+  font-size: 1.4rem;
+}
+@media (min-width: 767px) {
+  .contenedorContacto {
+    width: 50%;
+    padding: 6%;
+    margin-left: 26%;
+  }
+}
+
+/* catalogo */
+.containerCatalogo .col-lg-4 {
+  padding: 20px;
+}
+
+.card-sl {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardImage img {
+  height: 350px;
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.cardAction {
+  position: relative;
+  left: 85%;
+  z-index: 2;
+  color: rgb(255, 235, 235);
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  padding: 15px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardAction:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 235, 235);
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+.cardHeading {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  padding: 10px 15px;
+}
+
+.cardText {
+  padding: 10px 15px;
+  background: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  color: rgb(54, 54, 54);
+}
+
+.cardButton {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+  background-color: rgb(255, 235, 235);
+  color: rgb(0, 0, 0);
+  border-radius: 0 0 8px 8px;
+  font-size: 1.2rem;
+}
+
+.cardButton:hover {
+  text-decoration: none;
+  background-color: rgb(208, 178, 236);
+  color: rgb(255, 255, 255);
+}
+
+.cardImgBoton {
+  height: 100%;
+  width: 16px;
+}
+
+/* suscripcion*/
+.suscripcion {
+  background-color: rgb(211, 211, 211);
+  padding: 15%;
+}
+.suscripcion .btnSus {
+  display: inline;
+  margin-left: 30%;
+  width: 40%;
+  border-radius: 100px;
+  background-color: rgb(255, 235, 235);
+  color: rgb(0, 0, 0);
+  border: 0.5rem solid rgb(255, 235, 235);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.suscripcion .btnSus:hover {
+  background-color: rgb(255, 235, 235);
+  color: rgb(211, 211, 211);
+  transition-duration: 0.3s;
+}
+
+/* fin suscripcion*/
+/* IniciaFooter*/
+.footerSeccion {
+  padding: 50px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 235, 235);
+}
+.footerSeccion .footerTitulo {
+  margin-left: 12px;
+  margin-bottom: 12px;
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+.footerSeccion ul li {
+  list-style: none;
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+.footerSeccion ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+.footerSeccion ul a:hover {
+  opacity: 2;
+}
+.footerSeccion .item .text {
+  margin-bottom: 36px;
+}
+.footerSeccion .item .text p {
+  opacity: 0.6;
+}
+.footerSeccion .LogosFooter {
+  font-size: 1.8rem;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: rgb(255, 255, 255);
+  opacity: 0.75;
+}
+.footerSeccion .LogosFooter:hover {
+  opacity: 0.9;
+}
+.footerSeccion .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 1.4rem;
+}
+.footerSeccion .footerArg {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 767px) {
+  .footerSeccion .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+/* TerminaFooter*/
+
+/*# sourceMappingURL=main.css.map */

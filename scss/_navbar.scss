@@ -1,0 +1,31 @@
+
+.botoneraNav{
+    background-color:map-get($colors , background1 );
+
+    img{
+        width:$w-50;
+    }
+    ul{
+        li{
+            a{
+            font-size:$textXl;
+            color:map-get($colors, colorBotonera );
+            font-family:$fontPrimary;
+            background-image: linear-gradient(currentcolor, currentcolor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            &:hover{
+                color: map-get($colors, letrasNegras );
+                font-weight:$textLight;
+                background-size: 100% 2px;
+            }
+            }
+        }
+    }
+    .sesionAvatar{
+        height: 25px;
+        width: 25px;
+    }
+}

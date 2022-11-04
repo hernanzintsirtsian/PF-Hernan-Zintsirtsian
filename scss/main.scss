@@ -1,0 +1,18 @@
+*{
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    padding: 0%;
+    font-size: 62.5%;  
+}
+//imports
+
+@import"_animations";
+@import"_maps";
+@import "_commons";
+@import "_fonts";
+@import"_mixins";
+@import "_navbar";
+@import "_content";
+@import"_cardsCatalogo";
+@import "_btnSus";
+@import"_footer";

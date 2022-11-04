@@ -1,0 +1,22 @@
+/* suscripcion*/
+.suscripcion{
+    background-color:map-get($colors , backgroundSus );
+    padding: 15%;
+        .btnSus{
+        display: inline;
+        margin-left: 30%;
+        width: 40%;
+        border-radius:100px;
+        background-color:map-get($colors , background1 );
+        color: map-get($colors , background2 );
+        border:0.5rem solid map-get($colors , background1 );
+        font-weight:$textBold;
+        font-size: $textMd;
+        &:hover{
+            background-color: map-get($colors , background1 );
+            color: map-get($colors , backgroundSus );
+            transition-duration: 0.3s;
+        }
+        }
+} 
+  /* fin suscripcion*/
